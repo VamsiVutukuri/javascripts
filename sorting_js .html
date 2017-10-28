@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sorting</title>
+</head>
+<body>
+<script type="text/javascript" language ="javasricpt">
+// 	var arr = new Array(1,4,3,7,2,8);
+// 	var i,j,temp;
+// 	document.write("Before Sorting"+ "<br/>");
+
+// 	for(i=0 ; i<=5; i++)
+// 	{
+// 		document.write(arr[i]+"<br/>");
+// 	} 
+
+// 	for(i=0 ; i< 6; i++)
+// 	{
+// 		for(j=0 ; j< 5; j++)
+// 		{
+// 			if(arr[j] > arr[j-1] )
+// 			{
+// 					temp=arr[j];
+// 					arr[j] =arr[j-1];
+// 					arr[j-1]=temp;
+// 	        }
+// 		}
+// 	}
+
+// document.write("After Sorting"+"<br/>");
+// 	for(i=0 ; i<=5; i++)
+// 	{
+// 		document.write(arr[i]+"<br/>");
+// 	} 
+
+
+ var i,j,temp;
+ var a = new Array(1,7,4,9,3);
+ document.write("Before Sorting"+"<br>");
+for(i=0;i<5;i++)
+{
+	document.write(a[i] + "<br>");
+}
+
+for(i = 0;i<5;i++)
+{
+			for(j=0 ;j<4;j++)
+			{
+
+					else if(a[j] < a[j+1])
+					{
+						temp =a[j];
+						a[j] = a[j+1];
+						a[j+1]= temp;
+
+					}
+			}
+
+}
+document.write("After Sorting"+"<br>");
+
+for(i=0;i<5;i++)
+{
+	document.write(a[i] + "<br>");
+}
+</script>
+</body>
+</html>

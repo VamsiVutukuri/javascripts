@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Objects</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+	var demo = {"name": "Vamsi" , "age" : "20" , "mode" : "online" };
+
+	document.write("name:" +demo.name);
+	document.write("<br/><br/>");
+	document.write("age :" +demo.age);
+	document.write("<br/><br/>");
+	document.write("mode:" +demo.mode);
+	document.write("<br/><br/>");
+
+	var txt="";
+	var x ;
+	for(x in demo)
+	{
+		txt += demo[x] + ",";
+	}
+		 document.write(txt);
+</script>
+</body>
+</html>

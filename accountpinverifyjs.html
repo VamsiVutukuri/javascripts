@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account Verfication</title>
+	<script type="text/javascript" language ="javascript">
+	var pin;
+	var apin=4556; //actual pin
+	var count=0;
+	do{
+		 pin = prompt("enter is a value " ,"enter...");
+		count++;
+	}while(pin != apin && count < 3);
+	if(pin == apin)
+	{
+			document.write("Welcome to your account");
+	}
+	else
+	{
+			document.write("Account locked");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

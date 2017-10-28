@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+
+<body>
+<script language ="javascript" type="text/javascript">
+
+	var uid =prompt ("enter your name" , "name");
+
+	var pwd = prompt ("enter your password" , "password");
+
+	var msg = (uid == "vamsi"  &&  pwd == "lol1234") ? "welcome" : "invalid user"; // using terinary we can check whether a valid user or not 
+
+	var msg = (uid == "vamsi"  || uid == "vutukuri") ? "welcome" : "invalid user"; // or opearator makes to login diff persons
+
+	var msg = ! (uid == "vamsi" ||  uid == "vutukuri") ? "welcome" : "invalid user"; // not operators reverse of a general solution
+
+
+	 alert(msg);
+
+	</script>
+</body>
+</html>
