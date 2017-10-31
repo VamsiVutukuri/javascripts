@@ -72,3 +72,36 @@ let  Polygon = Polygon class
 document.println("Polygon:" ,Polygon);
 let p = new Polygon(10,20);
 document.println("p is" , p);
+
+
+//3
+// using static
+
+
+class Point{
+	constructor(x,y)
+	{
+
+		this.x =x;
+		this.y=y;
+	}
+	static distance(a,b)
+	{
+		let dx = x.a -x.b;
+		let dy = y.a-y.b;
+		return Math.floor(Math.sqrt(dx*dx -dy*dy));
+	}
+}
+
+let p1 = new Point(5,5);
+let p2 = new Point(10,10);
+
+document.write(Point.distance(p1,p2));
+
+try{
+	document.write(p1.distance(p1,p2));	
+}
+catch(err)
+{
+	document.write(err.type+"is a"+err.message);
+}
